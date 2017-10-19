@@ -1,0 +1,18 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: node index.js
+    volumes:
+      - ./app:/app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://undistortme@postgres/undistortme
+  postgres:
+    image: postgres:9.6.2-alpine
+    environment:
+      POSTGRES_USER: undistortme
+      POSTGRES_DB: undistortme

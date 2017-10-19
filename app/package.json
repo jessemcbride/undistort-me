@@ -1,0 +1,14 @@
+{
+  "name": "undistort.me",
+  "version": "1.0.0",
+  "description": "An online cognitive behavioral therapy (CBT) toolkit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesse McBride, Zachary Berry",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
