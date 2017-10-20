@@ -1,14 +1,29 @@
 {
-  "name": "undistort.me",
-  "version": "1.0.0",
-  "description": "An online cognitive behavioral therapy (CBT) toolkit",
-  "main": "index.js",
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "author": "Jesse McBride, Zachary Berry",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2"
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^4.0.0",
+    "express": "~4.15.5",
+    "express-session": "^1.15.6",
+    "hjs": "~0.0.6",
+    "less-middleware": "~2.2.1",
+    "morgan": "~1.9.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.3.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.15.0",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^3.0.0"
   }
 }
