@@ -5,13 +5,12 @@ module.exports = function(sequelize, Sequelize) {
             primaryKey: true,
             type: Sequelize.INTEGER
         },
- 
-        firstname: {
+        first_name: {
             type: Sequelize.STRING,
             notEmpty: true
         },
  
-        lastname: {
+        last_name: {
             type: Sequelize.STRING,
             notEmpty: true
         },
@@ -30,7 +29,6 @@ module.exports = function(sequelize, Sequelize) {
                 isEmail: true
             }
         },
- 
         password: {
             type: Sequelize.STRING,
             allowNull: false
