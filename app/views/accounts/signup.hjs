@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <p>Signup for {{ title }}</p>
+    <form>
+    	<label for="first_name">First name:</label>
+    	<input type="text" name="first_name" placeholder="Your first name">
+    	<br>
+    	<br>
+    	<label for="last_name">Last name:</label>
+    	<input type="text" name="last_name" placeholder="Your last name">
+    	<br>
+    	<br>
+    	<label for="username">Username:</label>
+    	<input type="text" name="username" placeholder="Your username">
+    	<br>
+    	<br>
+    	<label for="email">Email:</label>
+    	<input type="text" name="email" placeholder="Your email">
+    	<br>
+    	<br>
+    	<label for="password">Password:</label>
+    	<input type="password" name="password">
+    </form>
+  </body>
+</html>
