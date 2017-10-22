@@ -17,5 +17,5 @@ services:
   postgres:
     image: postgres:9.6.2-alpine
     environment:
-      DB_USERNAME: undistortme
-      DB_DATABASE: undistortme
+      POSTGRES_USER: undistortme
+      POSTGRES_DB: undistortme

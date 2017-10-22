@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>undistort.me - dashboard</title>
+</head>
+ 
+<body>
+    <h2>Dashboard</h2>
+    <h5>Hurray! you are logged in.</h5>
+</body>
+</html>
