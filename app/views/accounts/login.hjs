@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    {{ message }}
+    <p>Login to {{ title }}</p>
+    <form action="/accounts/login" method="POST">
+    	<label for="email">Email:</label>
+    	<input type="text" name="email" placeholder="Your email">
+    	<br>
+    	<br>
+    	<label for="password">Password:</label>
+    	<input type="password" name="password">
+    	<br>
+    	<br>
+    	<input type="submit" value="Login">
+    </form>
+    <br>
+    ...or <a href="/accounts/signup">sign up for free</a>
+  </body>
+</html>

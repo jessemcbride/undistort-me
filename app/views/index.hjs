@@ -7,5 +7,6 @@
   <body>
     <h1>{{ title }}</h1>
     <p>Welcome to {{ title }}</p>
+    <a href="accounts/signup">Sign up</a> or <a href="accounts/login">Login</a>
   </body>
 </html>

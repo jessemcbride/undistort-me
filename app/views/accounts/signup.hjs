@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <p>Signup for {{ title }}</p>
+    <form action="/accounts/register" method="POST">
+    	<label for="first_name">First name:</label>
+    	<input type="text" name="first_name" placeholder="Your first name">
+    	<br>
+    	<br>
+    	<label for="last_name">Last name:</label>
+    	<input type="text" name="last_name" placeholder="Your last name">
+    	<br>
+    	<br>
+    	<label for="email">Email:</label>
+    	<input type="text" name="email" placeholder="Your email">
+    	<br>
+    	<br>
+    	<label for="password">Password:</label>
+    	<input type="password" name="password">
+    	<br>
+    	<br>
+    	<input type="submit" value="Sign up">
+    </form>
+  </body>
+</html>
