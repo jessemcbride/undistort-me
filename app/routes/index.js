@@ -1,18 +1,17 @@
-var express = require('express');
-var passport = require('passport');
+let express = require('express');
+let passport = require('passport');
 
-var router = express.Router();
+let router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res, next) => {
   res.render('index', { title: 'undistort.me' });
 });
 
-router.get('/dashboard', loggedIn, function(req, res, next) {
+router.get('/dashboard', loggedIn, (req, res, next) => {
 	res.render('dashboard');
 });
 
-function loggedIn(req, res, next) {
+let loggedIn = (req, res, next) => {
 	if (req.user)
         return next();
 	         

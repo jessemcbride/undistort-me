@@ -3,7 +3,7 @@ var passport = require('passport');
 
 var router = express.Router();
 
-router.get('/signup', function(req, res, next) {
+router.get('/signup', (req, res, next) => {
 	res.render('accounts/signup', {
 		title: 'undistort.me',
 		message: req.flash('error')
@@ -16,7 +16,7 @@ router.post('/register', passport.authenticate('local-signup', {
 	failureFlash: true
 }));
 
-router.get('/login', function(req, res, next) {
+router.get('/login', (req, res, next) => {
 	res.render('accounts/login', {
 		title: 'undistort.me',
 		message: req.flash('error')
